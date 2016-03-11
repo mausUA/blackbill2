@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bbill">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" scr="scripts/app.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
 
 
-    <title>Blackbill2</title>
+    <title>Blackbill</title>
     <style>
         body {background: url(pics/bo_play_pattern.png);}
-        .jumbotron {width: 90%; margin: auto; padding-bottom: 0%}
+        .jumbotron {width: 90%; margin: auto; padding-bottom: 0px;}
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 100%;
@@ -24,7 +24,8 @@
     </style>
 
 </head>
-<body>
+<body  ng-app="MyApp">
+<div ng-controller="picControl as store">
 <div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -69,6 +70,7 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
     <!-- Wrapper for slides -->
@@ -81,14 +83,14 @@
             </div>
         </div>
 
-        <div class="item">
-            <img src="pics/ch2.jpg" alt="Chania">
-        </div>
 
-        <div class="item">
-            <img src="pics/ch5.jpg" alt="Flower">
+        <div class="item" ng-repeat="pct in store.gall">
+            <img ng-src="{{pct.pic}}" alt="{{pct.name}}"/>
+            <div class="carousel-caption">
+            <h3>{{pct.name}}</h3>
+            <p>{{pct.desc}}</p>
+            </div>
         </div>
-
 
     </div>
 
@@ -125,6 +127,7 @@
 
     </div>
 </div>
-
+<script type="text/javascript" src="scripts/app.js"></script>
+</div>
 </body>
 </html>
