@@ -30,7 +30,9 @@
 </head>
 <body  ng-app="MyApp">
 <div ng-controller="picControl as store">
-<div>
+
+
+    <div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,7 +65,7 @@
                 <li><a class="fa fa-facebook-square fa-lg" href="http://www.facebook.com/me"></a></li>
                 <li><a class="fa fa-twitter fa-lg" href="http://www.twitter.com/me"></a></li>
                 <li><a class="fa fa-instagram fa-lg" href="http://www.instagram.com/me"></a></li>
-                <li><a class="fa fa-phone-square fa-lg" href="+380501111111"></a></li>
+                <li><a class="fa fa-phone-square fa-lg" href="tel:+380501111111" data-toggle="tooltip" data-placement="bottom" title="Call us by: +380501111111"></a></li>
                 <li><a class="fa fa-envelope-square fa-lg" href="mailto:aaa@gmail.com"></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -148,7 +150,9 @@
 
         </div>
     </div>
-
+    <script type="text/javascript">
+        $('[data-toggle="tooltip"]').tooltip();
+    </script>
     <script type="text/javascript" src="scripts/app.js"></script>
 </div>
 </body>
