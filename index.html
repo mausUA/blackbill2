@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -13,6 +15,8 @@
     <style>
         body {background: url(pics/bo_play_pattern.png);}
         .jumbotron {width: 90%; margin: auto; padding-bottom: 0px;}
+        .modal-content {background: gray; color: white;}
+        .fa {color: darkgray;}
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 100%;
@@ -43,12 +47,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">About author<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">About project</a></li>
+                <li><a data-toggle="modal" data-target="#myModal">About author<span class="sr-only">(current)</span></a></li>
+                <li><a data-toggle="modal" data-target="#myModal_prj">About project<span class="sr-only">(current)</span></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Buildings</a></li>
+                        <li><a href="/pages/build.html">Buildings</a></li>
                         <li><a href="#">Landscapes</a></li>
                         <li><a href="#">Interior</a></li>
                     </ul>
@@ -56,8 +60,11 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Contacts</a></li>
-
+                <li><a class="fa fa-facebook-square fa-lg" href="http://www.facebook.com/me"></a></li>
+                <li><a class="fa fa-twitter fa-lg" href="http://www.twitter.com/me"></a></li>
+                <li><a class="fa fa-instagram fa-lg" href="http://www.instagram.com/me"></a></li>
+                <li><a class="fa fa-phone-square fa-lg" href="+380501111111"></a></li>
+                <li><a class="fa fa-envelope-square fa-lg" href="mailto:aaa@gmail.com"></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -106,28 +113,43 @@
 </div>
 </div>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">You can reach me at:</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About author</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Here is my short story</p>
+                </div>
+
             </div>
-            <div class="modal-body">
-                <p>Phone: +380123123123</p>
-                <p><a class="glyphicon glyphicon-envelope" href="mailto:aaa@gmail.com"> aaa@gmail.com</a></p>
-            </div>
-
-
 
         </div>
-
     </div>
-</div>
-<script type="text/javascript" src="scripts/app.js"></script>
+
+    <div id="myModal_prj" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About project</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Here is about photos</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
 </div>
 </body>
 </html>

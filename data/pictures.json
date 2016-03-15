@@ -1,0 +1,75 @@
+[
+  {type: 'building',
+    pic: 'pics/ch_1_1.jpg',
+    name: 'Reactor',
+    desc: 'Crazy construction'},
+  {type: 'building',
+    pic: 'pics/ch_1_3.jpg',
+    name: 'Reactor',
+    desc: 'Crazy another vconstruction'},
+  {type: 'building',
+    pic: 'pics/ch_1_4.jpg',
+    name: 'Reactor',
+    desc: 'Crazy new construction'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_1.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_2.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_3.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_4.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_5.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_7.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'landscape',
+    pic: 'pics/ch_2_8.jpg',
+    name: 'Overview',
+    desc: 'View on reactor'},
+
+  {type: 'interior',
+    pic: 'pics/ch_3_1.jpg',
+    name: 'Controller',
+    desc: 'Soviet remote control :)'},
+
+  {type: 'interior',
+    pic: 'pics/ch_3_2.jpg',
+    name: 'Controller',
+    desc: 'Soviet remote control :)'},
+
+  {type: 'interior',
+    pic: 'pics/ch_3_3.jpg',
+    name: 'Controller',
+    desc: 'Soviet remote control :)'},
+
+  {type: 'interior',
+    pic: 'pics/ch_3_4.jpg',
+    name: 'Controller',
+    desc: 'Soviet remote control :)'},
+
+  {type: 'interior',
+    pic: 'pics/ch_3_5.jpg',
+    name: 'Controller',
+    desc: 'Soviet remote control :)'}
+
+]
